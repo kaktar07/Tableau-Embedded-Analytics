@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨Embedding with DS13</title>
+
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+    <!-- telling html to use javascript api -->
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>✨Embedded Analytics</h1>
+
+    <div>
+      <button id="hideButton">🌭Hide the Viz!</button>
+      <button id="showButton">🍟Show the Viz!</button>
+      <button id="exportPDFbutton">🍔Export PDF</button>
+      <button id="exportPPTbutton">🍕Export PPT</button>
+    </div>
+
+    <div>
+      <input type="number" placeholder="Min Value" id="minValue" />
+      <input type="number" placeholder="Max Value" id="maxValue" />
+      <button id="applyFilter">Apply Filter!</button>
+    </div>
+
+    <div id="vizContainer"></div>
+    <!-- div is like a container.
+    can call this container whatever you want  -->
+
+    <script src="./app.js"></script>
+    <!-- we are telling html code to use our javascrip file -->
+  </body>
+</html>
